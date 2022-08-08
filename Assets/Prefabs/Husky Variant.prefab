@@ -225,16 +225,27 @@ PrefabInstance:
       propertyPath: m_Name
       value: Husky Variant
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -1579132030932115124, guid: bcf23c0d8fd9c9545a3f3900920b647d, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: bcf23c0d8fd9c9545a3f3900920b647d, type: 3}
 --- !u!4 &4174423151893864238 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4033801846037634303, guid: bcf23c0d8fd9c9545a3f3900920b647d, type: 3}
   m_PrefabInstance: {fileID: 1014566475306861521}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &4328091798950134370 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3604021382286655923, guid: bcf23c0d8fd9c9545a3f3900920b647d, type: 3}
+  m_PrefabInstance: {fileID: 1014566475306861521}
+  m_PrefabAsset: {fileID: 0}
 --- !u!54 &6467281971346793544 stripped
 Rigidbody:
   m_CorrespondingSourceObject: {fileID: 6328701404181850009, guid: bcf23c0d8fd9c9545a3f3900920b647d, type: 3}
+  m_PrefabInstance: {fileID: 1014566475306861521}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6541415163793513516 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6112423438757634045, guid: bcf23c0d8fd9c9545a3f3900920b647d, type: 3}
   m_PrefabInstance: {fileID: 1014566475306861521}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &7169098663725677056 stripped
@@ -255,3 +266,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Rigidbody: {fileID: 6467281971346793544}
+  vocalizeCanvas: {fileID: 6541415163793513516}
+  vocalizeText: {fileID: 4328091798950134370}
+  huskyVocalizeCanvas: {fileID: 6541415163793513516}
+  huskyVocalizeText: {fileID: 4328091798950134370}

@@ -14,7 +14,7 @@ public class Dog : Animal
     public override void Vocalize()
     {
         //bark
-        Debug.Log("Bark");
+        //Debug.Log("Bark");
         vocalizeCanvas.SetActive(true);
         vocalizeText.GetComponent<TMPro.TextMeshProUGUI>().text="Bark";
     }
@@ -22,7 +22,7 @@ public class Dog : Animal
     //POLYMORPHISM - OVERRIDES ANIMAL
     public override void Jump()
     {
-        Thrust/=2;
+        Thrust=1;
         base.Jump();
     }
 }

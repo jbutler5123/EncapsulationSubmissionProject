@@ -67,8 +67,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chihuahua Variant
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -1579132030932115124, guid: bcf23c0d8fd9c9545a3f3900920b647d, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: bcf23c0d8fd9c9545a3f3900920b647d, type: 3}
+--- !u!1 &1634816633242197286 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3604021382286655923, guid: bcf23c0d8fd9c9545a3f3900920b647d, type: 3}
+  m_PrefabInstance: {fileID: 2644746899195092117}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &5322604810302776644 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7884034474117642705, guid: bcf23c0d8fd9c9545a3f3900920b647d, type: 3}
@@ -87,6 +93,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Rigidbody: {fileID: 8313670405886884620}
+  vocalizeCanvas: {fileID: 8099644701918708584}
+  vocalizeText: {fileID: 1634816633242197286}
+  chiVocalizeCanvas: {fileID: 8099644701918708584}
+  chiVocalizeText: {fileID: 1634816633242197286}
+--- !u!1 &8099644701918708584 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6112423438757634045, guid: bcf23c0d8fd9c9545a3f3900920b647d, type: 3}
+  m_PrefabInstance: {fileID: 2644746899195092117}
+  m_PrefabAsset: {fileID: 0}
 --- !u!54 &8313670405886884620 stripped
 Rigidbody:
   m_CorrespondingSourceObject: {fileID: 6328701404181850009, guid: bcf23c0d8fd9c9545a3f3900920b647d, type: 3}

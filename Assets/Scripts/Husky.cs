@@ -12,14 +12,20 @@ public class Husky : Dog
     public override void Vocalize()
     {
         //POLYMORPHISM - OVERRIDES DOG AND ANIMAL
+        StartCoroutine(Howl());
+        
+    }
+
+    IEnumerator Howl()
+    {
         for (int i = 0; i < 3; i++)
         {
-            Debug.Log("OOOOOOOOOOOOOooooooooooooooooooooooooooo");
+            //Debug.Log("OOOOOOOOOOOOOooooooooooooooooooooooooooo");
             huskyVocalizeCanvas.SetActive(true);
-            huskyVocalizeText.GetComponent<TMPro.TextMeshProUGUI>().text="yap";
+            huskyVocalizeText.GetComponent<TMPro.TextMeshProUGUI>().text="OOOOOOOOOOOOOooooooooooooooooooooooooooo";
+            yield return StartCoroutine(Wait());
             base.Vocalize();
-            
+            yield return StartCoroutine(Wait());
         }
-        
     }
 }

@@ -244,7 +244,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &243481497
 Transform:
   m_ObjectHideFlags: 0
@@ -407,9 +407,9 @@ MonoBehaviour:
     m_Options:
     - m_Text: Vocalize
       m_Image: {fileID: 0}
-    - m_Text: Run (5 seconds
+    - m_Text: Run
       m_Image: {fileID: 0}
-    - m_Text: Walk (5 seconds)
+    - m_Text: Walk
       m_Image: {fileID: 0}
     - m_Text: Jump
       m_Image: {fileID: 0}
@@ -720,7 +720,7 @@ GameObject:
   - component: {fileID: 460118659}
   - component: {fileID: 460118658}
   m_Layer: 5
-  m_Name: Label
+  m_Name: Animal Label
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1215,6 +1215,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 716420159}
+  - component: {fileID: 716420160}
   m_Layer: 0
   m_Name: Command Manager
   m_TagString: Untagged
@@ -1237,6 +1238,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &716420160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 716420158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aca76500813f4644da8b77ded8e468b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dogs: []
+  animalSet: {fileID: 460118656}
+  commandSet: {fileID: 1810497193}
 --- !u!1 &731878405
 GameObject:
   m_ObjectHideFlags: 0
@@ -2061,7 +2077,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1378451109}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 716420160}
+        m_TargetAssemblyTypeName: CommandManager, Assembly-CSharp
+        m_MethodName: RunCommand
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1378451109
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2650,7 +2678,7 @@ GameObject:
   - component: {fileID: 1810497196}
   - component: {fileID: 1810497195}
   m_Layer: 5
-  m_Name: Label
+  m_Name: Command Label
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3093,8 +3121,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1945987907}
-  m_LocalRotation: {x: -0.013257413, y: 0.95083356, z: -0.30667612, w: -0.041105427}
-  m_LocalPosition: {x: 1.1635512, y: 14.599026, z: 23.383507}
+  m_LocalRotation: {x: -0.22215657, y: 0.48367247, z: -0.12840855, w: -0.8367907}
+  m_LocalPosition: {x: 22.866978, y: 11.791424, z: -16.117184}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3196,13 +3224,13 @@ MonoBehaviour:
     m_Options:
     - m_Text: All Animals
       m_Image: {fileID: 0}
-    - m_Text: Dogs
+    - m_Text: Dog
       m_Image: {fileID: 0}
-    - m_Text: -Chihuahuas
+    - m_Text: Chi
       m_Image: {fileID: 0}
-    - m_Text: -Huskies
+    - m_Text: Husky
       m_Image: {fileID: 0}
-    - m_Text: Cats
+    - m_Text: Cat
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:

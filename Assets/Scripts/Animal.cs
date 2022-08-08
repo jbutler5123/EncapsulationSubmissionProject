@@ -79,4 +79,10 @@ public abstract class Animal : MonoBehaviour
     {
         m_Rigidbody.AddForce(transform.up * m_Thrust, ForceMode.Impulse);
     }
+
+    public IEnumerator Wait()
+    {
+        yield return new WaitForSeconds(4);
+
+    }
 }

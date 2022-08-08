@@ -251,9 +251,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c859e523e78b0d54bbf5cfedf8215888, type: 3}
+--- !u!1 &3604021382286655923 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 724865601720267938, guid: c859e523e78b0d54bbf5cfedf8215888, type: 3}
+  m_PrefabInstance: {fileID: 4038377800883008785}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4033801846037634303 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1148913091574442478, guid: c859e523e78b0d54bbf5cfedf8215888, type: 3}
+  m_PrefabInstance: {fileID: 4038377800883008785}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6112423438757634045 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7843163393579018988, guid: c859e523e78b0d54bbf5cfedf8215888, type: 3}
   m_PrefabInstance: {fileID: 4038377800883008785}
   m_PrefabAsset: {fileID: 0}
 --- !u!54 &6328701404181850009 stripped
@@ -279,3 +289,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Rigidbody: {fileID: 6328701404181850009}
+  vocalizeCanvas: {fileID: 6112423438757634045}
+  vocalizeText: {fileID: 3604021382286655923}

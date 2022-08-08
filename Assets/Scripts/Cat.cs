@@ -10,11 +10,12 @@ public class Cat : Animal
     public GameObject vocalizeCanvas;
     public GameObject vocalizeText;
     
+    
     //POLYMORPHISM - OVERRIDES ANIMAL
     public override void Vocalize()
     {
         //meow
-        Debug.Log("Meow");
+        //Debug.Log("Meow");
         vocalizeCanvas.SetActive(true);
         vocalizeText.GetComponent<TMPro.TextMeshProUGUI>().text="Meow";
 
@@ -23,21 +24,21 @@ public class Cat : Animal
     //POLYMORPHISM - OVERRIDES ANIMAL
     public override void Walk()
     {
-        speed/=2;
+        speed=10;
         base.Walk();
     }
 
     //POLYMORPHISM - OVERRIDES ANIMAL
     public override void Run()
     {
-        runMultiplier*=2;
+        runMultiplier=2;
         base.Run();
     }
 
     //POLYMORPHISM - OVERRIDES ANIMAL
     public override void Jump()
     {
-        Thrust*=2;
+        Thrust=4;
         base.Jump();
     }
 

@@ -13,7 +13,7 @@ public class Chi : Dog
     public override void Vocalize()
     {
         //Yap
-        Debug.Log("Yap");
+        //Debug.Log("Yap");
         chiVocalizeCanvas.SetActive(true);
         chiVocalizeText.GetComponent<TMPro.TextMeshProUGUI>().text="yap";
     }
@@ -21,14 +21,14 @@ public class Chi : Dog
     //POLYMORPHISM - OVERRIDES ANIMAL
     public override void Walk()
     {
-        speed/=2;
+        speed=2.5f;
         base.Walk();
     }
 
     //POLYMORPHISM - OVERRIDES ANIMAL
     public override void Run()
     {
-        runMultiplier/=2;
+        runMultiplier=0.5f;
         base.Run();
     }
 }
