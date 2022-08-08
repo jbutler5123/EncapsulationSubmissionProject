@@ -57,7 +57,7 @@ public abstract class Animal : MonoBehaviour
         }
     }
     private float m_Thrust=2.0f;
-    private Rigidbody m_Rigidbody;
+    [SerializeField] private Rigidbody m_Rigidbody;
 
     //INHERITANCE - ABSTRACT METHOD TO BE OVERRIDDEN
     public abstract void Vocalize();
