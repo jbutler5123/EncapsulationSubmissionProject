@@ -40,7 +40,7 @@ public class SpawnManager : MonoBehaviour
     {
         float spawnPosX= UnityEngine.Random.Range(-spawnRange,spawnRange);
         float spawnPosZ=UnityEngine.Random.Range(-spawnRange,spawnRange);
-        Vector3 spawnPos= new Vector3(spawnPosX,5,spawnPosZ);
+        Vector3 spawnPos= new Vector3(spawnPosX,2,spawnPosZ);
 
         return spawnPos;
     }

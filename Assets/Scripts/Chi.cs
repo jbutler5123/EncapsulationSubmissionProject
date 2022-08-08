@@ -21,14 +21,14 @@ public class Chi : Dog
     //POLYMORPHISM - OVERRIDES ANIMAL
     public override void Walk()
     {
-        speed=2.5f;
+        speed=25f;
         base.Walk();
     }
 
     //POLYMORPHISM - OVERRIDES ANIMAL
     public override void Run()
     {
-        runMultiplier=0.5f;
+        runMultiplier=1.5f;
         base.Run();
     }
 }

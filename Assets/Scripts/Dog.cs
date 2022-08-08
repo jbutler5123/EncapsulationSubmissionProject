@@ -22,7 +22,7 @@ public class Dog : Animal
     //POLYMORPHISM - OVERRIDES ANIMAL
     public override void Jump()
     {
-        Thrust=1;
+        Thrust=2;
         base.Jump();
     }
 }

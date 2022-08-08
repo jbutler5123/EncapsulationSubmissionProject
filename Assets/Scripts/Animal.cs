@@ -20,7 +20,7 @@ public abstract class Animal : MonoBehaviour
             }
         }
     }
-    private float m_speed=5.0f;
+    private float m_speed=50.0f;
 
     //ENCAPSULATION GETTER AND SETTER
     public float runMultiplier
@@ -56,7 +56,7 @@ public abstract class Animal : MonoBehaviour
             }
         }
     }
-    private float m_Thrust=2.0f;
+    private float m_Thrust=4.0f;
     [SerializeField] private Rigidbody m_Rigidbody;
 
     //INHERITANCE - ABSTRACT METHOD TO BE OVERRIDDEN
@@ -65,13 +65,15 @@ public abstract class Animal : MonoBehaviour
     //INHERITANCE - VIRTUAL METHOD CAN BE OVERRIDDEN
     public virtual void Run()
     {
-        transform.Translate(Vector3.forward*m_speed*m_runMultiplier*Time.deltaTime);
+        //transform.Translate(Vector3.forward*m_speed*m_runMultiplier*Time.deltaTime);
+        transform.position=Vector3.Lerp(transform.position, transform.position+Vector3.forward, m_speed*m_runMultiplier*Time.deltaTime);
     }
     
     //INHERITANCE - VIRTUAL METHOD CAN BE OVERRIDDEN
     public virtual void Walk()
     {
-        transform.Translate(Vector3.forward*m_speed*Time.deltaTime);
+        //transform.Translate(Vector3.forward*m_speed*Time.deltaTime);
+        transform.position=Vector3.Lerp(transform.position, transform.position+Vector3.forward, m_speed*Time.deltaTime);
     }
 
     //INHERITANCE - VIRTUAL METHOD CAN BE OVERRIDDEN
@@ -85,4 +87,5 @@ public abstract class Animal : MonoBehaviour
         yield return new WaitForSeconds(4);
 
     }
+    
 }

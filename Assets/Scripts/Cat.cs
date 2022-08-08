@@ -24,7 +24,7 @@ public class Cat : Animal
     //POLYMORPHISM - OVERRIDES ANIMAL
     public override void Walk()
     {
-        speed=10;
+        speed=100;
         base.Walk();
     }
 
@@ -38,7 +38,7 @@ public class Cat : Animal
     //POLYMORPHISM - OVERRIDES ANIMAL
     public override void Jump()
     {
-        Thrust=4;
+        Thrust=8;
         base.Jump();
     }
 

@@ -66,7 +66,7 @@ public class CommandManager : MonoBehaviour
                     case "Vocalize":
                         VocalizeCat();
                         break;
-                    case "walk":
+                    case "Walk":
                         WalkCat();
                         break;
                     case "Run":
@@ -85,7 +85,7 @@ public class CommandManager : MonoBehaviour
                     case "Vocalize":
                         VocalizeDog();
                         break;
-                    case "walk":
+                    case "Walk":
                         WalkDog();
                         break;
                     case "Run":
@@ -104,11 +104,14 @@ public class CommandManager : MonoBehaviour
                     case "Vocalize":
                         VocalizeChi();
                         break;
-                    case "walk":
+                    case "Walk":
+                        WalkChi();
                         break;
                     case "Run":
+                        RunChi();
                         break;
                     case "Jump":
+                        JumpChi();
                         break;
                     default:
                         break;
@@ -120,11 +123,14 @@ public class CommandManager : MonoBehaviour
                     case "Vocalize":
                         VocalizeHusky();
                         break;
-                    case "walk":
+                    case "Walk":
+                        WalkHusky();
                         break;
                     case "Run":
+                        RunHusky();
                         break;
                     case "Jump":
+                        JumpHusky();
                         break;
                     default:
                         break;
